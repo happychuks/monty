@@ -39,7 +39,10 @@ All the files are compiled in the following form:
 gcc -Wall -Werror -Wextra -pedantic *.c -o monty. 
 ```
 To run the program
-```  ./monty bytecode_file ```
-Summary of all operations included:
+```bash
+./monty bytecode_file 
+```
+## Summary of all operations included:
+
 | Opcode | Description |
 |--------|-------------|

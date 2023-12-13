@@ -20,10 +20,11 @@ void (*getOpcode_func(char **parsed))(stack_t **, unsigned int)
 		{"nop", nop_handler},
 		{"sub", sub_handler},
 		{"div", div_handler},
+		{"mul", mul_handler},
 		{NULL, NULL}
 	};
 
-	int total_OpCodes = 9, i;
+	int total_OpCodes = 10, i;
 
 	for (i = 0; i < total_OpCodes; i++)
 	{

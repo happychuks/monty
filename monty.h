@@ -94,7 +94,8 @@ extern data_t data;
 #define DIV_ZERO "L%u: division by zero\n"
 #define MUL_FAIL "L%u: can't mul, stack too short\n"
 #define MOD_FAIL "L%u: can't mod, stack too short\n"
-
+#define PCHAR_FAIL "L%u: can't pchar, stack empty\n"
+#define PCHAR_RANGE "L%u: can't pchar, value out of range\n"
 
 /* main.c */
 void monty(args_t *args);
@@ -126,6 +127,7 @@ void div_handler(stack_t **stack, unsigned int line_number);
 /* opcode_handler_funcs3.c */
 void mul_handler(stack_t **stack, unsigned int line_number);
 void mod_handler(stack_t **stack, unsigned int line_number);
+void pchar_handler(stack_t **stack, unsigned int line_number);
 
 
 #endif /* Prepared by Happy F. Chukwuma */

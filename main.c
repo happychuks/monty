@@ -1,6 +1,8 @@
 #include "monty.h"
 #include "linkedlists.h"
 
+data_t data = DATA_INIT;
+
 /**
  * main - entry point for monty bytecode interpreter
  * @argc: number of arguments
@@ -30,8 +32,6 @@ int main(int argc, char *argv[])
  * containing the opcodes, and calls the function
  * that will find the corresponding executing function
  */
-
-data_t data = DATA_INIT;
 
 void monty(args_t *args)
 {

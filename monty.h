@@ -87,6 +87,8 @@ extern data_t data;
 #define MALLOC_FAIL "Error: malloc failed\n"
 #define PINT_FAIL "L%u: can't pint, stack empty\n"
 #define POP_FAIL "L%u: can't pop an empty stack\n"
+#define SWAP_FAIL "L%u: can't swap, stack too short\n"
+
 
 /* main.c */
 void monty(args_t *args);
@@ -107,6 +109,7 @@ void push_handler(stack_t **stack, unsigned int line_number);
 void pall_handler(stack_t **stack, unsigned int line_number);
 void pint_handler(stack_t **stack, unsigned int line_number);
 void pop_handler(stack_t **stack, unsigned int line_number);
+void swap_handler(stack_t **stack, unsigned int line_number);
 
 
 #endif /* Prepared by Happy F. Chukwuma */

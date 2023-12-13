@@ -88,6 +88,7 @@ extern data_t data;
 #define PINT_FAIL "L%u: can't pint, stack empty\n"
 #define POP_FAIL "L%u: can't pop an empty stack\n"
 #define SWAP_FAIL "L%u: can't swap, stack too short\n"
+#define ADD_FAIL "L%u: can't add, stack too short\n"
 
 
 /* main.c */
@@ -110,6 +111,9 @@ void pall_handler(stack_t **stack, unsigned int line_number);
 void pint_handler(stack_t **stack, unsigned int line_number);
 void pop_handler(stack_t **stack, unsigned int line_number);
 void swap_handler(stack_t **stack, unsigned int line_number);
+
+/* opcode_handler_funcs2.c */
+void add_handler(stack_t **stack, unsigned int line_number);
 
 
 #endif /* Prepared by Happy F. Chukwuma */

@@ -24,10 +24,11 @@ void (*getOpcode_func(char **parsed))(stack_t **, unsigned int)
 		{"mod", mod_handler},
 		{"pchar", pchar_handler},
 		{"pstr", pstr_handler},
+		{"rotl", rotl_handler},
 		{NULL, NULL}
 	};
 
-	int total_OpCodes = 13, i;
+	int total_OpCodes = 14, i;
 
 	for (i = 0; i < total_OpCodes; i++)
 	{

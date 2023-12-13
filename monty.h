@@ -89,6 +89,7 @@ extern data_t data;
 #define POP_FAIL "L%u: can't pop an empty stack\n"
 #define SWAP_FAIL "L%u: can't swap, stack too short\n"
 #define ADD_FAIL "L%u: can't add, stack too short\n"
+#define SUB_FAIL "L%u: can't sub, stack too short\n"
 
 
 /* main.c */
@@ -115,5 +116,6 @@ void swap_handler(stack_t **stack, unsigned int line_number);
 /* opcode_handler_funcs2.c */
 void add_handler(stack_t **stack, unsigned int line_number);
 void nop_handler(stack_t **stack, unsigned int line_number);
+void sub_handler(stack_t **stack, unsigned int line_number);
 
 #endif /* Prepared by Happy F. Chukwuma */

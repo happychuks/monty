@@ -18,10 +18,11 @@ void (*getOpcode_func(char **parsed))(stack_t **, unsigned int)
 		{"swap", swap_handler},
 		{"add", add_handler},
 		{"nop", nop_handler},
+		{"sub", sub_handler},
 		{NULL, NULL}
 	};
 
-	int total_OpCodes = 7, i;
+	int total_OpCodes = 8, i;
 
 	for (i = 0; i < total_OpCodes; i++)
 	{

@@ -90,7 +90,7 @@ extern data_t data;
 #define SWAP_FAIL "L%u: can't swap, stack too short\n"
 #define ADD_FAIL "L%u: can't add, stack too short\n"
 #define SUB_FAIL "L%u: can't sub, stack too short\n"
-
+#define DIV_FAIL "L%u: can't div, stack too short\n"
 
 /* main.c */
 void monty(args_t *args);
@@ -117,5 +117,7 @@ void swap_handler(stack_t **stack, unsigned int line_number);
 void add_handler(stack_t **stack, unsigned int line_number);
 void nop_handler(stack_t **stack, unsigned int line_number);
 void sub_handler(stack_t **stack, unsigned int line_number);
+void div_handler(stack_t **stack, unsigned int line_number);
+
 
 #endif /* Prepared by Happy F. Chukwuma */

@@ -93,6 +93,8 @@ extern data_t data;
 #define DIV_FAIL "L%u: can't div, stack too short\n"
 #define DIV_ZERO "L%u: division by zero\n"
 #define MUL_FAIL "L%u: can't mul, stack too short\n"
+#define MOD_FAIL "L%u: can't mod, stack too short\n"
+
 
 /* main.c */
 void monty(args_t *args);
@@ -123,5 +125,7 @@ void div_handler(stack_t **stack, unsigned int line_number);
 
 /* opcode_handler_funcs3.c */
 void mul_handler(stack_t **stack, unsigned int line_number);
+void mod_handler(stack_t **stack, unsigned int line_number);
+
 
 #endif /* Prepared by Happy F. Chukwuma */

@@ -14,12 +14,13 @@ void (*getOpcode_func(char **parsed))(stack_t **, unsigned int)
 		{"push", push_handler},
 		{"pall", pall_handler},
 		{"pint", pint_handler},
+		{"pop", pop_handler},
 		{NULL, NULL}
 	};
 
-	int opCodes = 3, i;
+	int total_OpCodes = 4, i;
 
-	for (i = 0; i < opCodes; i++)
+	for (i = 0; i < total_OpCodes; i++)
 	{
 		if (strcmp(funcs_arr[i].opcode, parsed[0]) == 0)
 		{

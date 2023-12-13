@@ -86,7 +86,7 @@ extern data_t data;
 #define PUSH_FAIL "L%u: usage: push integer\n"
 #define MALLOC_FAIL "Error: malloc failed\n"
 #define PINT_FAIL "L%u: can't pint, stack empty\n"
-
+#define POP_FAIL "L%u: can't pop an empty stack\n"
 
 /* main.c */
 void monty(args_t *args);
@@ -106,6 +106,7 @@ char **strtow(char *str);
 void push_handler(stack_t **stack, unsigned int line_number);
 void pall_handler(stack_t **stack, unsigned int line_number);
 void pint_handler(stack_t **stack, unsigned int line_number);
+void pop_handler(stack_t **stack, unsigned int line_number);
 
 
 #endif /* Prepared by Happy F. Chukwuma */

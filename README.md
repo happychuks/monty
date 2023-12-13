@@ -1,5 +1,7 @@
 # 0x19. C - Stacks, Queues - LIFO, FIFO
 
+![plot](./bytecodes/makeTea.png)
+
 ## Description
 
 This ALX project is a custom ByteCode interpreter, coded in C.
@@ -60,3 +62,14 @@ To run the program
 [helper_funcs.c](./helper_funcs.c) | helper functions
 [getOpcode_func.c](./getOpcode_func.c) | function that picks the right function for each Opcode
 [opcode_handler_funcs1.c](./opcode_handler_funcs1.c) | handler functions for some Opcodes functions
+[opcode_handler_funcs2.c](./opcode_handler_funcs2.c) | handler functions for some Opcodes function
+[opcode_handler_funcs3.c](./opcode_handler_funcs3.c) | handler functions for some Opcodes function
+[opcode_handler_funcs4.c](./opcode_handler_funcs4.c) | handler functions for some Opcodes function
+
+
+## Contact
+
+Feel free to reach out with any questions, suggestions, or contributions to:
+
+* **Happy Felix Chukwuma**
+  * [Contact Happy F. Chukwuma](mailto:<happychukwuma@gmail.com>?subject=[_Collaboration_on_MONTY_PROJECT])

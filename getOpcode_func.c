@@ -26,10 +26,12 @@ void (*getOpcode_func(char **parsed))(stack_t **, unsigned int)
 		{"pstr", pstr_handler},
 		{"rotl", rotl_handler},
 		{"rotr", rotr_handler},
+		{"stack", stack_handler},
+		{"queue", queue_handler},
 		{NULL, NULL}
 	};
 
-	int total_OpCodes = 15, i;
+	int total_OpCodes = 17, i;
 
 	for (i = 0; i < total_OpCodes; i++)
 	{

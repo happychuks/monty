@@ -133,6 +133,7 @@ void pstr_handler(stack_t **stack, unsigned int line_number);
 /* opcode_handler_funcs4.c */
 void rotl_handler(stack_t **stack, unsigned int line_number);
 void rotr_handler(stack_t **stack, unsigned int line_number);
-
+void stack_handler(stack_t **stack, unsigned int line_number);
+void queue_handler(stack_t **stack, unsigned int line_number);
 
 #endif /* Prepared by Happy F. Chukwuma */

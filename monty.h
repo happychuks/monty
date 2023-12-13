@@ -114,6 +114,6 @@ void swap_handler(stack_t **stack, unsigned int line_number);
 
 /* opcode_handler_funcs2.c */
 void add_handler(stack_t **stack, unsigned int line_number);
-
+void nop_handler(stack_t **stack, unsigned int line_number);
 
 #endif /* Prepared by Happy F. Chukwuma */

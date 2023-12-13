@@ -78,11 +78,15 @@ typedef stack_t dlistint_t;
 extern data_t data;
 
 #define DATA_INIT {NULL, NULL, NULL, NULL, 0}
+
+/* Error message helper */
 #define USAGE "USAGE: monty file\n"
 #define FILE_ERROR "Error: Can't open file %s\n"
 #define UNKNOWN "L%u: unknown instruction %s\n"
 #define PUSH_FAIL "L%u: usage: push integer\n"
 #define MALLOC_FAIL "Error: malloc failed\n"
+#define PINT_FAIL "L%u: can't pint, stack empty\n"
+
 
 /* main.c */
 void monty(args_t *args);
@@ -101,5 +105,7 @@ char **strtow(char *str);
 /* opcode_handler_funcs1.c */
 void push_handler(stack_t **stack, unsigned int line_number);
 void pall_handler(stack_t **stack, unsigned int line_number);
+void pint_handler(stack_t **stack, unsigned int line_number);
+
 
 #endif /* Prepared by Happy F. Chukwuma */

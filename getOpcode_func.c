@@ -13,10 +13,11 @@ void (*getOpcode_func(char **parsed))(stack_t **, unsigned int)
 	instruction_t funcs_arr[] = {
 		{"push", push_handler},
 		{"pall", pall_handler},
+		{"pint", pint_handler},
 		{NULL, NULL}
 	};
 
-	int opCodes = 2, i;
+	int opCodes = 3, i;
 
 	for (i = 0; i < opCodes; i++)
 	{

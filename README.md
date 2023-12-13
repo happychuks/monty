@@ -50,5 +50,13 @@ To run the program
 ```
 ## Summary of all operations included:
 
-| Opcode | Description |
+| File | Description |
 |--------|-------------|
+[main.c](./main.c) | entry point of the program
+[monty.h](./monty.h) | main header file
+[linkedlists.h](./linkedlists.h) | header file for the linkedlists functions
+[linkedlist_funcs1.c](./linkedlist_funcs1.c) | doubly linked list functions
+[mem_free_handler.c](./mem_free_handler.c) | memory handling functions
+[helper_funcs.c](./helper_funcs.c) | helper functions
+[getOpcode_func.c](./getOpcode_func.c) | function that picks the right function for each Opcode
+[opcode_handler_funcs1.c](./opcode_handler_funcs1.c) | handler functions for some Opcodes functions

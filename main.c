@@ -11,7 +11,6 @@
 
 int main(int argc, char *argv[])
 {
-	data_t data = DATA_INIT;
 	args_t args;
 
 	args.av = argv[1];
@@ -32,6 +31,7 @@ int main(int argc, char *argv[])
  * that will find the corresponding executing function
  */
 
+data_t data = DATA_INIT;
 
 void monty(args_t *args)
 {
@@ -62,7 +62,7 @@ void monty(args_t *args)
 			free_all(0);
 			continue;
 		}
-		code_func = get_func(data.words);
+		code_func = getOpcode_func(data.words);
 		if (!code_func)
 		{
 			dprintf(STDERR_FILENO, UNKNOWN, args->line_number, data.words[0]);

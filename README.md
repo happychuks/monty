@@ -72,4 +72,4 @@ To run the program
 Feel free to reach out with any questions, suggestions, or contributions to:
 
 * **Happy Felix Chukwuma**
-  * [Contact Happy F. Chukwuma](mailto:<happychukwuma@gmail.com>?subject=[_Collaboration_on_MONTY_PROJECT])
+  * [Click here to send an email](mailto:<happychukwuma@gmail.com>?subject=[_Collaboration_on_MONTY_PROJECT])
